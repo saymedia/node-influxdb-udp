@@ -1,0 +1,23 @@
+{
+  "name": "node-influxdb-udp",
+  "description": "InfluxDB UDP client",
+  "version": "0.0.1",
+  "author": "Brad Choate <bchoate@saymedia.com>",
+  "license": "MIT",
+  "repository": "saymedia/node-influxdb-udp",
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "scripts": {
+    "test": "mocha test"
+  },
+  "keywords": [
+    "influxdb",
+    "influx",
+    "udp"
+  ],
+  "files": [
+    "index.js"
+  ]
+}
