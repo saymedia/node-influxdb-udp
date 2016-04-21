@@ -60,7 +60,8 @@ function _formatMessage(measure, values, tags) {
         }
         message += ' ' + valueArray.join(',');
     }
-    return message + ' ' + Math.round(Date.now() / 1000);
+    // Send timestamp value to server as nanoseconds, the default precision
+    return message + ' ' + (Date.now() * 1000000);
 }
 
 function _extend(dest, obj) {
