@@ -22,11 +22,6 @@ function _formatFieldValue(value) {
     else if (value === false) {
         value = 'FALSE';
     }
-    else if (typeof value === 'number' && (value.toString().match(/^[0-9]+$/))) {
-        // integers should end with 'i' otherwise they are
-        // stored as floats
-        value = value + 'i';
-    }
     else if (typeof value === 'string') {
         // strings must be in quotes
         value = '"' + value.replace(/"/g, '\\"') + '"';
